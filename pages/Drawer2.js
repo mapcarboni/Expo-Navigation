@@ -1,10 +1,10 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-export default function DrawerScreen() {
+export default function Drawer2() {
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Página Drawer</Text>
+            <Text style={styles.title}>Página Drawer 2</Text>
         </View>
     );
 }
@@ -14,7 +14,7 @@ const styles = {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "lightgreen",
+        backgroundColor: "yellow",
     },
     title: {
         fontSize: 30,
