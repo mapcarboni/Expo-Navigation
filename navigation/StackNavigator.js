@@ -1,9 +1,9 @@
-import React from "react"; // Importa a biblioteca React
-import { createNativeStackNavigator } from "@react-navigation/native-stack"; // Importa a função para criar um stack navigator nativo
-import StackScreen from "../pages/StackScreen"; // Importa o componente StackScreen
-import Stack2 from "../pages/Stack2"; // Importa o componente Stack2
+import React from "react";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import StackScreen from "../pages/StackScreen";
+import Stack2 from "../pages/Stack2";
 
-const Stack = createNativeStackNavigator(); // Cria uma instância do stack navigator
+const Stack = createNativeStackNavigator();
 
 export default function StackNavigator() {
     return (
