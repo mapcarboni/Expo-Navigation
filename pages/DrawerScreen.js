@@ -1,9 +1,11 @@
-import React from "react";
-import { View, Text } from "react-native";
+import React from "react"; // Importa a biblioteca React
+import { View, Text } from "react-native"; // Importa os componentes View e Text da biblioteca react-native
 
 export default function DrawerScreen() {
     return (
+        // Retorna uma View com estilo container
         <View style={styles.container}>
+            {/* Exibe um texto com estilo title */}
             <Text style={styles.title}>Página Drawer</Text>
         </View>
     );
@@ -11,12 +13,12 @@ export default function DrawerScreen() {
 
 const styles = {
     container: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "lightgreen",
+        flex: 1, // Faz com que a View ocupe todo o espaço disponível
+        justifyContent: "center", // Centraliza os filhos verticalmente
+        alignItems: "center", // Centraliza os filhos horizontalmente
+        backgroundColor: "lightgreen", // Define a cor de fundo como verde claro
     },
     title: {
-        fontSize: 30,
+        fontSize: 30, // Define o tamanho da fonte como 30
     },
 };

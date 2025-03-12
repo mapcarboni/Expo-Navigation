@@ -1,16 +1,16 @@
 import React from "react"; // Importa a biblioteca React
 import { View, Text } from "react-native"; // Importa os componentes View e Text da biblioteca react-native
 
-// Define o componente funcional TabScreen
 export default function TabScreen() {
     return (
+        // Renderiza um componente View com o estilo container
         <View style={styles.container}>
+            {/* Renderiza um componente Text com o estilo title */}
             <Text style={styles.title}>Página Tab</Text>
         </View>
     );
 }
 
-// Define os estilos utilizados no componente
 const styles = {
     container: {
         flex: 1, // Faz o componente ocupar todo o espaço disponível

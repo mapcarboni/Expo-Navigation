@@ -9,22 +9,34 @@ const Tab = createBottomTabNavigator(); // Cria uma instância do navegador de a
 export default function TabNavigator() {
     return (
         <Tab.Navigator initialRouteName="Tab Screen">
-                <Tab.Screen 
-                    name="Tab Screen" 
-                    component={TabScreen} 
-                    options={{
-                        tabBarIcon: ({ color, size }) => (
-                            <Icon name="home" color={color} size={size} />
-                        ),
-                    }}
-                />
-            <Tab.Screen name="Tab2" component={Tab2} />
+            {/* Define o navegador de abas com a rota inicial "Tab Screen" */}
+            <Tab.Screen 
+                name="Tab Screen" 
+                component={TabScreen} 
+                options={{
+                    tabBarIcon: ({ color, size }) => ( // Define o ícone da aba usando o componente Icon
+                        <Icon name="home" color={color} size={size} />
+                    ),
+                }}
+            />
+            {/* Define a tela "Tab Screen" com o componente TabScreen */}
+            {/* Define o ícone da aba usando o componente Icon */}
+            {/* Define a tela "Tab 2" com o componente Tab2 */}            
+            <Tab.Screen 
+                name="Tab2" 
+                component={Tab2} 
+                options={{
+                    tabBarIcon: ({ color, size }) => (
+                        <Icon name="refresh" color={color} size={size} />
+                    ),
+                }}
+            />
         </Tab.Navigator>
     );
 }
 
 /*
-Liste icons padroes
+Lista icons padroes
 Icon name="home"
 Icon name="person"
 Icon name="search"

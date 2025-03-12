@@ -1,10 +1,11 @@
 import React from "react"; // Importa a biblioteca React
 import { View, Text } from "react-native"; // Importa os componentes View e Text da biblioteca react-native
 
-// Define o componente funcional Stack2
 export default function Stack2() {
     return (
+        // Renderiza um componente View com os estilos definidos
         <View style={styles.container}>
+            {/* Renderiza um componente Text com o estilo title */}
             <Text style={styles.title}>Página Stack</Text>
         </View>
     );
